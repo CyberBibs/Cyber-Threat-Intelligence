@@ -38,8 +38,11 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
 1. **Deploying the Ubuntu Server on Azure:**
    - Deploy an Ubuntu server with the name OpenCTI1 in azure.
-     <img src="images/vm1.png">
+     <img src="images/vm1.png" alt="VM deployment" width="500">
+     
    - Setting up inbound firewall rule to allow http traffic on port 8080 to allow me connect to the openCTI application via my web browser. 
+
+    <img src="images/fw1.png" alt="Inbound firewall configuration" width="600">
 
 2. **Setup and Configuration of pfSense:**
    - Install pfSense on a VM to function as a dedicated firewall.
