@@ -6,6 +6,18 @@ The objective of this lab is to show my threat intelligence skill and assist org
 
 In this lab, I investigated real-world threats using penCTI and the AlienVault OTX connector, to identify high-risk actors and activities, and report my findings in a way that supports an organization's critical decision-making.
 
+During this lab, I completed the following;
+
+  **Sector & Threat Landscape Profiling:** I Determined an organization’s operational sector within OpenCTI and conducted threat information gathering and landscape analysis focused on that sector.
+  
+  **Country-Level Threat Assessment:** Identifed the top two cyber threats actively targeting the country where the organization’s headquarters is based, gaining geopolitical insight into threat actor behavior.
+  
+  **Victim and Threat Deep Dive:** Investigated the three most targeted entities over the last three months and analyze the top threats facing them. Apply frameworks such as the Diamond Model, Kill Chain, and timeline analysis to understand attacker behavior and impact.
+
+  **Political Threat Actor Analysis:** Profiled a recent threat actor group with political motivations, uncovering their objectives, tools, techniques, and geographic scope.
+  
+  **Reporting and Executive Presentation:** Developed a detailed intelligence report and deliver a high-level executive briefing that communicates findings clearly and effectively to stakeholders. Your presentation should bridge the gap between technical threat data and business decision-making.
+  
 ### Skills Learned
 
 - Application of cyber frameworks such as Diamond Model, Kill Chaun and time analysis to understand attacker behavior and impact.
@@ -38,6 +50,7 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
 1. **Deploying the Ubuntu Server on Azure:**
    - Deploy an Ubuntu server with the name OpenCTI1 in azure.
+     
      <img src="images/vm1.png" alt="VM deployment" width="500">
      
    - Setting up inbound firewall rule to allow http traffic on port 8080 to allow me connect to the openCTI application via my web browser. 
