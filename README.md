@@ -44,8 +44,15 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
     <img src="images/fw1.png" alt="Inbound firewall configuration" width="600">
 
-2. **Setup and Configuration of pfSense:**
-   - Install pfSense on a VM to function as a dedicated firewall.
+2. **Installation, configuration and deployment of OpenCTI via docker:**
+   - I downloaded and install the Docker Compose CLI plugin.
+
+    <img src="images/dc1.png" alt="docker compose installation" width="500">
+
+    - Next, I gained root access to my server and navigated to the /opt/ directory where I created a new directory /opencti/, navigated into the opencti directory and cloned this github directory git clone https://github.com/OpenCTI-Platform/docker.git
+
+    <img src="images/clone.png" alt="cloning a github directory" width="500">
+    
    - **Hardware Settings:** I set the RAM memory to 2gb and created 5 custom network adapters. This adapters will be use to support connectivity for other machines administered by the         pfSense machine.
    - **Network Configuration:** Assign custom virtual networks to the network adapters.
 
