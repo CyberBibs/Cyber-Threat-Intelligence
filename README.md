@@ -45,6 +45,10 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
     <img src="images/fw1.png" alt="Inbound firewall configuration" width="600">
 
 2. **Installation, configuration and deployment of OpenCTI via docker:**
+   - Connected to my OpenCTI1 server using putty to perform all installations and configuration.
+
+    <img src="images/putty1.png" alt="Connecting to my server" width="600">
+     
    - I downloaded and install the Docker Compose CLI plugin.
 
     <img src="images/dc1.png" alt="docker compose installation" width="500">
@@ -53,7 +57,10 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
     <img src="images/clone.png" alt="cloning a github directory" width="500">
     
-   - **Hardware Settings:** I set the RAM memory to 2gb and created 5 custom network adapters. This adapters will be use to support connectivity for other machines administered by the         pfSense machine.
+   - **Configure the environment: ** I edited the .env file retrieved from cloning the above repository and edited the openCTL admin email and admin password fields to email and password of my preference. I also, set the base url to my Ubuntu server ip address to enable me access my openCTL application and finally generated UUID online to use in the healthcheck access key and admin token field.
+
+    <img src="images/env1.png" alt="setting up environment variable" width="500">
+  
    - **Network Configuration:** Assign custom virtual networks to the network adapters.
 
      <img src="Images/pfsense1.png" alt="Initial Setup of Network Interfaces" width="500">
