@@ -67,20 +67,32 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
   
    - Finally, I am able to access the OpenCTI application via my web browser using the server ip address on port 8080.
      
-     <img src="Images/openCTI.png" alt="OpenCTI login Page" width="500">
+     <img src="images/openCTI.png" alt="OpenCTI login Page" width="500">
  
     - I proceeded to login using the email address and password I configured in the .env file.
  
-       <img src="Images/login.png" alt="OpenCTI login Page" width="500">
+       <img src="images/login.png" alt="OpenCTI login Page" width="500">
        
-       <img src="Images/dash.png" alt="OpenCTI login Page" width="500">
+       <img src="images/dash.png" alt="OpenCTI login Page" width="500">
 
 3. **Adding AlienVault Connector to OpenCTI:**
    - I visited the AlienVault webapage here https://otx.alienvault.com to create an account so as to get an API key I will use later in my confiduration.
    - Next, I visited https://github.com/OpenCTI-Platform/connectors to add an external-import AlienVault Connector in OpenCTI
    - Generated a UUID from here https://www.uuidgenerator.net/
    - Opened the docker.compose.yml file in raw from the AlienVault page above and copied the contents.
+
+      <img src="images/con1.png" alt="Git Copy" width="500">
+
    - I proceeded to paste this content in the docker-compose.yml file in my docker configuration directory.
+
+      <img src="images/con2.png" alt="Git paste" width="500">
+
    - I Changed the OPENCTI_URL to my server ip address, OPENCTI_TOKEN to opecnCTI token, CONNECTOR_ID to the UUID i got from the UUID generator page above, and I entered my API key i got after creating an account with AlienVault in the ALIENVAULT_API_KEY.
+
+     <img src="images/con3.png" alt="Git paste2" width="500">
+    
    - Next, I updated the docker-compose.yml file and restarted docker.
+
+   <img src="images/con4.png" alt="Git paste2" width="500">
+
    - Now I waited for some time and after successfully restarting docker, Loged into OpenCTI and went to Data and then the Connectors page,        to verify that AlienVault connector is succesfully added.
