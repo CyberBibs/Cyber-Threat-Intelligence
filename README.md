@@ -18,13 +18,13 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
 ### Threat Intelligence Platform
 - **OpenCTI (Open Cyber Threat Intelligence):**
-  - Serves as the firewall to segment the private homelab network.
+  - An open-source platform I used to manage and share cyber threat intelligence (CTI) in this project.
 - **AllienVault Connector :**
-  - Used for intrusion detection and security monitoring.
+  - a software component that i connected to OpenCTI to facilitates data integration and automation between AlienVault's Open Threat Exchange (OTX) OpenCTI.
 
 ### Container
 - **Docker:**
-  - Deployed as the attack machine for security testing.
+  - The conte.
 
 ### Operating System
 - **Ubuntu 22.04:**
