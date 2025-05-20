@@ -57,9 +57,13 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
     <img src="images/clone.png" alt="cloning a github directory" width="500">
     
-   - **Configure the environment: ** I edited the .env file retrieved from cloning the above repository and edited the openCTL admin email and admin password fields to email and password of my preference. I also, set the base url to my Ubuntu server ip address to enable me access my openCTL application and finally generated UUID online to use in the healthcheck access key and admin token field.
+   - Configure the environment: I edited the .env file retrieved from cloning the above repository and edited the openCTL admin email and admin password fields to email and password of my preference. I also, set the base url to my Ubuntu server ip address to enable me access my openCTL application and finally generated UUID online to use in the healthcheck access key and admin token field.
 
     <img src="images/env1.png" alt="setting up environment variable" width="500">
+
+- Next, I started docker service and ran the container in detached mode.
+
+    <img src="images/cont.png" alt="Starting the Container" width="500">
   
    - **Network Configuration:** Assign custom virtual networks to the network adapters.
 
