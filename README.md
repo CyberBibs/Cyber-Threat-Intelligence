@@ -111,3 +111,5 @@ During this lab, I completed the following;
    - Now I waited for some time and after successfully restarting docker, Loged into OpenCTI and went to Data and then the Connectors page,        to verify that AlienVault connector is succesfully added.
 
        <img src="images/con5.png" alt="Git paste2" width="500">
+
+## Performing Threat Intelligence
