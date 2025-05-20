@@ -30,6 +30,10 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 - **Docker:**
   - Docker in simple term is a software platform that allows you to build, test, and deploy applications quickly. In this project, I used docker to deploy openCTI application.
 
+### SSH Client
+- **Putty:**
+  - I used this to connect with my remote Ubuntu server hosted in Azure.
+    
 ## Configuration Steps
 
 1. **Deploying the Ubuntu Server on Azure:**
