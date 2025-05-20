@@ -37,7 +37,7 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 ## Configuration Steps
 
 1. **Deploying the Ubuntu Server on Azure:**
-   - Deploy an Ubuntu server with the name OpenCTI in azure.
+   - Deploy an Ubuntu server with the name OpenCTI1 in azure.
      <img src="images/VMWare1.PNG" alt="Installing VMWare" width="500">
    - Setting up inbound firewall rule to allow http traffic on port 8080 to allow me connect to the openCTI application via my web browser. 
 
