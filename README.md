@@ -22,13 +22,13 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 - **AllienVault Connector :**
   - a software component that i connected to OpenCTI to facilitates data integration and automation between AlienVault's Open Threat Exchange (OTX) OpenCTI.
 
-### Container
-- **Docker:**
-  - The conte.
-
 ### Operating System
 - **Ubuntu 22.04:**
-  - Manages user authentication and domain management.
+  -A popular, free and open-source Linux-based operating system. I used this as my server operating System which is used to deplor docker.
+
+### Container
+- **Docker:**
+  - Docker in simple term is a software platform that allows you to build, test, and deploy applications quickly. In this project, I used docker to deploy openCTI application.
 
 ### Tools Used
 - OpenCTI : .
