@@ -77,13 +77,14 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
 
 3. **Adding AlienVault Connector to OpenCTI:**
-   - Deploy an Ubuntu server with the name OpenCTI1 in azure.
-     <img src="images/vm1.png" alt="VM deployment" width="500">
-     
-   - Setting up inbound firewall rule to allow http traffic on port 8080 to allow me connect to the openCTI application via my web browser. 
-
-    <img src="images/fw1.png" alt="Inbound firewall configuration" width="600">
-
+   - I visited the AlienVault webapage here https://otx.alienvault.com to create an account so as to get an API key I will use later in my confiduration.
+   - Next, I visited this https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/alienvault?source=post_page-----b43db414aeda--------------------------------------- to add an external-import AlienVault Connector in OpenCTI
+   - Generated a UUID from here https://www.uuidgenerator.net/
+   - Opened the docker.compose.yml file in raw from the AlienVault page above and copied the contents.
+   - I proceeded to paste this content in the docker-compose.yml file in my docker configuration directory.
+   - I Changed the OPENCTI_URL to my server ip address, OPENCTI_TOKEN to opecnCTI token, CONNECTOR_ID to the UUID i got from the UUID generator page above, and I entered my API key i got after creating an account with AlienVault in the ALIENVAULT_API_KEY.
+   - Next, I updated the docker-compose.yml file and restarted docker.
+   - Now I waited for some time and after successfully restarting docker, Loged into OpenCTI and went to Data and then the Connectors page,        to verify that AlienVault connector is succesfully added.
 
 ### About the System
 The Client Details System (version 1.0) is a web-based application built using PHP, CSS, Bootstrap, and JavaScript. It serves as a centralized platform for managing client information, providing both user and administrator panels. The user panel facilitates the entry and retrieval of client details, while the administrator panel empowers system management and user administration.
