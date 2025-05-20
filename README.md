@@ -6,20 +6,29 @@ The objective of this lab is to show my threat intelligence skill and assist org
 
 In this lab, I investigated real-world threats using penCTI and the AlienVault OTX connector, to identify high-risk actors and activities, and report my findings in a way that supports an organization's critical decision-making.
 
-### Key Components
-- Setting up core Azure components such as Resource Group, Virtual Networks (VNETs), subnets, Bastion Services and networking configurations.
-- Creation of 2 Virtual Machines is accessible via secure bastion RDP connection.
-- Deploying FortiGate firewall and configuring firewall rules
-- Implementation of Intrusion Prevention Systems (IPS) using FortiGate for robust network security.
-- Creation and deployment of a Log Analytics Workspace and connecting the FortiGate firewall to enable centralized and efficient log management.
-- Connecting Microsoft Sentinel to Log Analytics Workspace.
-- Utilization of Microsoft Sentinel to create alerts, perform incident response, and maintain the security and integrity of the network..
-
 ### Skills Learned
 
 - Application of cyber frameworks such as Diamond Model, Kill Chaun and time analysis to understand attacker behavior and impact.
 - Cyber Threat Intelligence.
 - Starting, stoping and managing docker.
+
+## Components
+### Virtualization Platform
+- **Microsoft Azure:** Acts as the hypervisor hosting all other virtual machines/servers.
+
+### Threat Intelligence Platform
+- **OpenCTI (Open Cyber Threat Intelligence):**
+  - Serves as the firewall to segment the private homelab network.
+- **AllienVault Connector :**
+  - Used for intrusion detection and security monitoring.
+
+### Container
+- **Docker:**
+  - Deployed as the attack machine for security testing.
+
+### Operating System
+- **Ubuntu 22.04:**
+  - Manages user authentication and domain management.
 
 ### Tools Used
 - OpenCTI : .
