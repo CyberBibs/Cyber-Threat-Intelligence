@@ -93,6 +93,8 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
     
    - Next, I updated the docker-compose.yml file and restarted docker.
 
-   <img src="images/con4.png" alt="Git paste2" width="500">
+     <img src="images/con4.png" alt="Git paste2" width="500">
 
    - Now I waited for some time and after successfully restarting docker, Loged into OpenCTI and went to Data and then the Connectors page,        to verify that AlienVault connector is succesfully added.
+
+       <img src="images/con5.png" alt="Git paste2" width="500">
