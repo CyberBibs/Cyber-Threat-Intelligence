@@ -30,11 +30,21 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 - **Docker:**
   - Docker in simple term is a software platform that allows you to build, test, and deploy applications quickly. In this project, I used docker to deploy openCTI application.
 
-### Tools Used
-- OpenCTI : .
-- AllienVault OTX Connector: .
-- Azure VM: .
-- Docker: .
+## Configuration Steps
+
+1. **Deploying the Ubuntu Server on Azure:**
+   - Deploy an Ubuntu server with the name OpenCTI in azure.
+     <img src="images/VMWare1.PNG" alt="Installing VMWare" width="500">
+   - Setting up inbound firewall rule to allow http traffic on port 8080 to allow me connect to the openCTI application via my web browser. 
+
+2. **Setup and Configuration of pfSense:**
+   - Install pfSense on a VM to function as a dedicated firewall.
+   - **Hardware Settings:** I set the RAM memory to 2gb and created 5 custom network adapters. This adapters will be use to support connectivity for other machines administered by the         pfSense machine.
+   - **Network Configuration:** Assign custom virtual networks to the network adapters.
+
+     <img src="Images/pfsense1.png" alt="Initial Setup of Network Interfaces" width="500">
+      
+      *Initial Setup of Network Interfaces*
 
 ### About the System
 The Client Details System (version 1.0) is a web-based application built using PHP, CSS, Bootstrap, and JavaScript. It serves as a centralized platform for managing client information, providing both user and administrator panels. The user panel facilitates the entry and retrieval of client details, while the administrator panel empowers system management and user administration.
