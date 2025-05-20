@@ -65,11 +65,25 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
 
     <img src="images/cont.png" alt="Starting the Container" width="500">
   
-   - **Network Configuration:** Assign custom virtual networks to the network adapters.
+   - Finally, I am able to access the OpenCTI application via my web browser using the server ip address on port 8080.
+     
+     <img src="Images/openCTI.png" alt="OpenCTI login Page" width="500">
+ 
+    - I proceeded to login using the email address and password I configured in the .env file.
+ 
+       <img src="Images/login.png" alt="OpenCTI login Page" width="500">
+       
+       <img src="Images/dash.png" alt="OpenCTI login Page" width="500">
 
-     <img src="Images/pfsense1.png" alt="Initial Setup of Network Interfaces" width="500">
-      
-      *Initial Setup of Network Interfaces*
+
+3. **Adding AlienVault Connector to OpenCTI:**
+   - Deploy an Ubuntu server with the name OpenCTI1 in azure.
+     <img src="images/vm1.png" alt="VM deployment" width="500">
+     
+   - Setting up inbound firewall rule to allow http traffic on port 8080 to allow me connect to the openCTI application via my web browser. 
+
+    <img src="images/fw1.png" alt="Inbound firewall configuration" width="600">
+
 
 ### About the System
 The Client Details System (version 1.0) is a web-based application built using PHP, CSS, Bootstrap, and JavaScript. It serves as a centralized platform for managing client information, providing both user and administrator panels. The user panel facilitates the entry and retrieval of client details, while the administrator panel empowers system management and user administration.
