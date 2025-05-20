@@ -75,45 +75,12 @@ In this lab, I investigated real-world threats using penCTI and the AlienVault O
        
        <img src="Images/dash.png" alt="OpenCTI login Page" width="500">
 
-
 3. **Adding AlienVault Connector to OpenCTI:**
    - I visited the AlienVault webapage here https://otx.alienvault.com to create an account so as to get an API key I will use later in my confiduration.
-   - Next, I visited this https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/alienvault?source=post_page-----b43db414aeda--------------------------------------- to add an external-import AlienVault Connector in OpenCTI
+   - Next, I visited https://github.com/OpenCTI-Platform/connectors to add an external-import AlienVault Connector in OpenCTI
    - Generated a UUID from here https://www.uuidgenerator.net/
    - Opened the docker.compose.yml file in raw from the AlienVault page above and copied the contents.
    - I proceeded to paste this content in the docker-compose.yml file in my docker configuration directory.
    - I Changed the OPENCTI_URL to my server ip address, OPENCTI_TOKEN to opecnCTI token, CONNECTOR_ID to the UUID i got from the UUID generator page above, and I entered my API key i got after creating an account with AlienVault in the ALIENVAULT_API_KEY.
    - Next, I updated the docker-compose.yml file and restarted docker.
    - Now I waited for some time and after successfully restarting docker, Loged into OpenCTI and went to Data and then the Connectors page,        to verify that AlienVault connector is succesfully added.
-
-### About the System
-The Client Details System (version 1.0) is a web-based application built using PHP, CSS, Bootstrap, and JavaScript. It serves as a centralized platform for managing client information, providing both user and administrator panels. The user panel facilitates the entry and retrieval of client details, while the administrator panel empowers system management and user administration.
-
-### Threat Considered
-Due to the vulnerability found in our assessment of the Client Details System 1.0, we discovered that the “uemail” parameter allows SQL Injection. We exploited this vulnerability and compromised the application, thereby able to access user data (username and password) and the underlying database information CVE-2023-7137.     
-
-### Attack scenario
-For this vulnerability assessment, the attack scenarios considered include firstly, an attacker exploiting vulnerabilities in input validation mechanisms of the Client Details System to inject malicious SQL queries into user input fields and potentially gaining unauthorized access to the database and executing arbitrary commands. Secondly, the attacker can also bypass authentication mechanisms to gain unauthorized access to privileged functionalities within the system. Thirdly, attackers can also use automated tools to attempt and guess admin credentials to gain uncontrolled access.
-
-### Steps
-1. OWAS ZAP: Used OWASP ZAP, an open-source web application security scanner, to conduct automated vulnerability scans on the http://localhost/clientdetailsystem. We Configured ZAP to perform comprehensive scans, including both passive and active scanning, then reviewed the scan results to identify and prioritize potential security vulnerabilities detected by OWASP ZAP. As shown in Proof of Concept, BLIND SQL injection and UNION Query SQL inject were identified as critical vulnerability.  
-![Picture2](https://github.com/user-attachments/assets/8c621698-fb08-40e9-bbab-f3403fe1b5df)
-
-2. Burp Suite: we use this to carry out manual tests and also capture HTTP Post Request Header. Extracted payloads and attack vectors identified by OWASP ZAP for manual verification, we then Utilized Burp Suite's Repeater tool to replay requests and manipulate parameters with the identified payloads by Conducting targeted manual testing, including input validation bypass, XSS, and other injection attacks, to validate and further exploit identified vulnerabilities.
-![Picture3](https://github.com/user-attachments/assets/6f51cdcb-d689-422a-aaf0-888ef4dcb94d)
-
-3. SQLMAP: used for detecting and performing SQL injection vulnerability present in the Client Detail System. The steps perform using SQLMap are descriped below; <br>
-   i. Capture and Save HTTP POST Request Header: We initiated the testing process by          capturing the HTTP POST request header generated from the login request with            invalid username and password inputs within the Client Details System (CDS).            This interception was conducted using Burp Suite. The captured request,                 containing the attempted exploit, was then saved as a text file named request.txt       for further analysis and exploitation.
- ii.  Enumerate Databases and Discover Injection Point: Utilizing the saved HTTP              request file, SQLMap was employed to scan the Client Details System for SQL             injection vulnerabilities. Command executed was:
-   sqlmap.py -r C:\Users\musta\OneDrive\Desktop\request.txt --dbs --flush     session.
-                            Output
-   ![Picture4](https://github.com/user-attachments/assets/d481269c-870d-4319-b7cf-2becb942f468)
-
-
-
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
